@@ -12,46 +12,66 @@ Lucus always loves protagonists like most of us. But Dustin is quite crazy, he l
 
 Okay, let us explain. They are going to facilitate the ultimate war between Super Heroes and Super Villains. As they are new to these technologies, they need a **ProGrad** to help them build this game.
 
-## What should you do
-```
-Fork this repo
-Clone this repo
-Practice JavaScript Basics - Operators, Conditions, Loops
-```
+## Learning Goals
 
-## How To Submit
-```
+After this lesson, you will be able to:
+
+- Create a static Angular application with Angular CLI.
+- Build an Angular application with components.
+- Use maps and filters in your typescript.
+
+## Requirements
+
+- Fork this repo.
+- Clone this repo.
+
+## Submission
+
 Upon completion, run the following commands:
 
-git add .
-git commit -m "ProGrad ID"
-git push origin master
-
-And finally, create a pull request so your ProGrad Mentor (PM) can review your work.
+```bash
+$ git add .
+$ git commit -m "done"
+$ git push origin master
 ```
 
-## Starter code
+Navigate to your repo and create a pull request from your master branch to the original repository's master branch.
 
-The `src/app.js` contains an array of 20 Super Heroes and Super-Villains. We are talking about the array of 20 _strings_ containing each Super Heroes and Super-Villains names. Here is one example of how the data is displayed:
+In the pull request name, add your Prograd id, name, and last name separated by a dash "-".
 
-```javascript
-[
-    "Spiderman"
-]
-```
+## Deliverables
 
-### Tests
+You need to generate the starter code and fill it with the necessary code to satisfy the requirements described below.
 
-Open the `SpecRunner.html` file on your browser and start coding to pass the test. Remember to focus on one test at a time and read carefully the instructions to understand what you have to do.
+
+## Starter Code
+
+To generate the starter code, follow the steps given below
+
+- To create a new application,
+    - Open your ubuntu or cmd terminal and execute the following command
+      - ```ng new app-name```
+      - for example, ng new super-wars
+    - To create a new component, execute the command 
+      - ``` ng generate component component-name```
+      - example, ng generate component contacts
+      
+## How to run
+
+- To run the project go to your ubuntu terminal or VScode editor
+    - open the ubuntu or cmd terminal or inside the vscode editor
+    - run the command following command
+    - ```ng serve --open or ng serve -o```
+
 
 ### Progression 1: Keep it simple
 
-In `initPlayers()`, `map` pass a constant array and create JSON Objects, such that each player contains name, strength, image url and type.  
+In `initPlayers()`, `map` pass a constant array and create array of Objects, such that each player contains name, strength, image url and type.  
 * Use default `strength` as any number.  
 * `image` can be sequential i.e. "images/super-"+(i+1)+".png"  
 * `type` of player can alternating between hero and villain or your own logic.
 * It should _return an array_ of player objects.
-    ```javascript
+    ```
     [
         {
             name:"Super Man",
@@ -64,7 +84,7 @@ In `initPlayers()`, `map` pass a constant array and create JSON Objects, such th
 
 ### Progression 2: Shrink down
 
-In `buildPlayers()`, instead of using for loop, use chaining of Array methods - filter, map and join to loop through the created JSON objects and accumulate HTML template as below and _return that HTML template_.
+In `buildPlayers()`, instead of using for loop, use chaining of Array methods - filter, map and join to loop through the created array of objects and accumulate HTML template as below and _return that HTML template_.
  ```JS
 <div class="player">
     <img src="${players[i].image}">
@@ -75,6 +95,6 @@ In `buildPlayers()`, instead of using for loop, use chaining of Array methods - 
 
 ## Expected Output
 
-![Superwars](doc/superwars-array.png)
+![Superwars]()
 
 Happy Coding ProGrad ❤️
