@@ -95,6 +95,6 @@ In `buildPlayers()`, instead of using for loop, use chaining of Array methods - 
 
 ## Expected Output
 
-![Superwars]()
+![Superwars](https://i1.faceprep.in/ProGrad/superwars-stage3.png)
 
 Happy Coding ProGrad ❤️
